@@ -6,8 +6,8 @@
         <field id="tpd5" name="Date de fin" width="14" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nom" width="56" order="0"/>
-        <field id="1" name="Rôle par défaut" width="43" order="1"/>
+        <field id="0" name="Nom" width="50" order="0"/>
+        <field id="1" name="Rôle par défaut" width="50" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -37,34 +37,20 @@
         </taskproperties>
         <task id="1" name="Début du projet" color="#cc0033" meeting="true" start="2020-01-20" duration="0" complete="0" expand="true"/>
         <task id="4" name="Établissement CdC" color="#8cb6ce" meeting="false" start="2020-01-20" duration="10" complete="0" expand="true"/>
-        <task id="6" name="Prise en main Unity" color="#ffcc33" meeting="false" start="2020-01-31" duration="11" complete="0" expand="true"/>
-        <task id="10" name="Implémentation Métronome base" color="#ffcc33" meeting="false" start="2020-02-10" duration="5" complete="0" expand="true"/>
-        <task id="12" name="Réflexion sur le gameplay" color="#ffcc33" meeting="false" start="2020-02-03" duration="15" complete="0" expand="true">
-            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        <task id="6" name="Prise en main Unity" color="#ffcc33" meeting="false" start="2020-01-31" duration="16" complete="0" expand="true"/>
+        <task id="10" name="Création d'un projet métronome" color="#ffcc33" meeting="false" start="2020-02-14" duration="7" complete="0" expand="true"/>
+        <task id="181" name="Création de la partie rythmique" color="#ffcc33" meeting="false" start="2020-02-17" duration="20" complete="0" expand="true"/>
+        <task id="40" name="Etat d'avancement du projet" color="#cc0033" meeting="true" start="2020-03-11" duration="0" complete="0" expand="true"/>
+        <task id="12" name="Réflexion sur le gameplay" color="#ffcc33" meeting="false" start="2020-03-11" duration="3" complete="0" expand="true">
             <depend id="42" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="31" name="Interface Utilisateur de base" color="#ffcc33" meeting="false" start="2020-02-03" duration="25" complete="0" expand="true">
-            <depend id="28" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="14" name="Affichage tablature" color="#ffcc33" meeting="false" start="2020-02-14" duration="5" complete="0" expand="true"/>
-        <task id="42" name="Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-02-24" duration="10" complete="0" expand="true">
-            <depend id="28" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="45" name="Implémentation de l'accordeur" color="#ffcc99" meeting="false" start="2020-03-13" duration="9" complete="0" expand="true"/>
-        <task id="57" name="Implémentation suivi de progression" color="#ffcc99" meeting="false" start="2020-03-16" duration="10" complete="0" expand="true"/>
-        <task id="82" name="Affinage du gameplay et de l'interface" color="#ffcc33" meeting="false" start="2020-03-27" duration="6" complete="0" expand="true"/>
-        <task id="40" name="Etat d'avancement du projet" color="#cc0033" meeting="true" start="2020-03-11" duration="0" complete="0" expand="true"/>
-        <task id="8" name="Prise en main Arduino" color="#33cc00" meeting="false" start="2020-02-03" duration="15" complete="0" expand="true">
-            <depend id="23" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="23" name="Aquisition des signaux audio" color="#33cc00" meeting="false" start="2020-02-24" duration="13" complete="0" expand="true">
-            <depend id="28" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="26" name="Achat et réception des modules nécessaires" color="#33cc00" meeting="false" start="2020-02-03" duration="15" complete="0" expand="true">
-            <depend id="23" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="28" name="Lien entre le programme et l'Arduino" color="#33cc00" meeting="false" start="2020-03-12" duration="10" complete="0" expand="true"/>
-        <task id="84" name="Rédaction des différents documents pour le rendu" color="#8cb6ce" meeting="false" start="2020-03-16" duration="19" complete="0" expand="true"/>
+        <task id="42" name="Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-03-16" duration="10" complete="0" expand="true"/>
+        <task id="14" name="Affichage tablature" color="#ffcc33" meeting="false" start="2020-03-11" duration="8" complete="0" expand="true"/>
+        <task id="186" name="Copie_Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-03-16" duration="10" complete="0" expand="true"/>
+        <task id="166" name="Réalisation de l'interface utilisateur hors jeu" meeting="false" start="2020-03-11" duration="13" complete="0" expand="true"/>
+        <task id="167" name="Connection à l'interface audio" meeting="false" start="2020-03-26" duration="10" complete="0" expand="true"/>
+        <task id="82" name="Affinage du gameplay et de l'interface" color="#ffcc33" meeting="false" start="2020-03-30" duration="8" complete="0" expand="true"/>
+        <task id="84" name="Rédaction des différents documents pour le rendu" color="#8cb6ce" meeting="false" start="2020-03-23" duration="13" complete="0" expand="true"/>
         <task id="33" name="Fin du projet" color="#cc0033" meeting="true" start="2020-04-09" duration="0" complete="0" expand="true"/>
         <task id="35" name="Oral de présentation" color="#cc0033" meeting="false" start="2020-04-13" duration="2" complete="0" expand="true"/>
     </tasks>
