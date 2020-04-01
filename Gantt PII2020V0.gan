@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-01-20" view-index="0" gantt-divider-location="476" resource-divider-location="300" version="2.0" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-01-20" view-index="0" gantt-divider-location="521" resource-divider-location="300" version="2.0" locale="fr">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="68" order="0"/>
-        <field id="tpd4" name="Date de début" width="16" order="1"/>
-        <field id="tpd5" name="Date de fin" width="14" order="2"/>
+        <field id="tpd3" name="Nom" width="65" order="0"/>
+        <field id="tpd4" name="Date de début" width="18" order="1"/>
+        <field id="tpd5" name="Date de fin" width="16" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>
@@ -41,18 +41,16 @@
         <task id="10" name="Création d'un projet métronome" color="#ffcc33" meeting="false" start="2020-02-14" duration="7" complete="0" expand="true"/>
         <task id="181" name="Création de la partie rythmique" color="#ffcc33" meeting="false" start="2020-02-17" duration="20" complete="0" expand="true"/>
         <task id="40" name="Etat d'avancement du projet" color="#cc0033" meeting="true" start="2020-03-11" duration="0" complete="0" expand="true"/>
-        <task id="12" name="Réflexion sur le gameplay" color="#ffcc33" meeting="false" start="2020-03-11" duration="3" complete="0" expand="true">
+        <task id="316" name="Mise en commun des parties exercices et métronome" meeting="false" start="2020-03-11" duration="14" complete="0" expand="true"/>
+        <task id="12" name="Réflexion sur le gameplay" color="#ffcc33" meeting="false" start="2020-03-11" duration="8" complete="0" expand="true">
             <depend id="42" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="42" name="Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-03-16" duration="10" complete="0" expand="true"/>
-        <task id="14" name="Affichage tablature" color="#ffcc33" meeting="false" start="2020-03-11" duration="8" complete="0" expand="true"/>
-        <task id="186" name="Copie_Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-03-16" duration="10" complete="0" expand="true"/>
-        <task id="166" name="Réalisation de l'interface utilisateur hors jeu" meeting="false" start="2020-03-11" duration="13" complete="0" expand="true"/>
-        <task id="167" name="Connection à l'interface audio" meeting="false" start="2020-03-26" duration="10" complete="0" expand="true"/>
-        <task id="82" name="Affinage du gameplay et de l'interface" color="#ffcc33" meeting="false" start="2020-03-30" duration="8" complete="0" expand="true"/>
-        <task id="84" name="Rédaction des différents documents pour le rendu" color="#8cb6ce" meeting="false" start="2020-03-23" duration="13" complete="0" expand="true"/>
-        <task id="33" name="Fin du projet" color="#cc0033" meeting="true" start="2020-04-09" duration="0" complete="0" expand="true"/>
-        <task id="35" name="Oral de présentation" color="#cc0033" meeting="false" start="2020-04-13" duration="2" complete="0" expand="true"/>
+        <task id="42" name="Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-03-23" duration="10" complete="0" expand="true"/>
+        <task id="14" name="Affichage tablature" color="#ffcc33" meeting="false" start="2020-03-16" duration="15" complete="0" expand="true"/>
+        <task id="166" name="Réalisation de l'interface utilisateur hors jeu" meeting="false" start="2020-03-06" duration="17" complete="0" expand="true"/>
+        <task id="167" name="Connection à l'interface audio" meeting="false" start="2020-04-02" duration="10" complete="0" expand="true"/>
+        <task id="84" name="Rédaction des différents documents pour le rendu" color="#8cb6ce" meeting="false" start="2020-04-06" duration="12" complete="0" expand="true"/>
+        <task id="33" name="Fin du projet" color="#cc0033" meeting="true" start="2020-04-22" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
@@ -67,9 +65,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="323" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="80" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="69" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="338" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="95" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="84" visible="true"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
