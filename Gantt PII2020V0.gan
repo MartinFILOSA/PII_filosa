@@ -46,9 +46,9 @@
             <depend id="42" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="42" name="Implémentation du gameplay interactif" color="#ffcc33" meeting="false" start="2020-03-23" duration="10" complete="0" expand="true"/>
-        <task id="14" name="Affichage tablature" color="#ffcc33" meeting="false" start="2020-03-16" duration="15" complete="0" expand="true"/>
+        <task id="14" name="Affichage tablature" color="#ffcc33" meeting="false" start="2020-03-16" duration="20" complete="0" expand="true"/>
         <task id="166" name="Réalisation de l'interface utilisateur hors jeu" meeting="false" start="2020-03-06" duration="17" complete="0" expand="true"/>
-        <task id="167" name="Connection à l'interface audio" meeting="false" start="2020-04-02" duration="10" complete="0" expand="true"/>
+        <task id="167" name="Connection à l'interface audio" meeting="false" start="2020-04-02" duration="12" complete="0" expand="true"/>
         <task id="84" name="Rédaction des différents documents pour le rendu" color="#8cb6ce" meeting="false" start="2020-04-06" duration="12" complete="0" expand="true"/>
         <task id="33" name="Fin du projet" color="#cc0033" meeting="true" start="2020-04-22" duration="0" complete="0" expand="true"/>
     </tasks>
