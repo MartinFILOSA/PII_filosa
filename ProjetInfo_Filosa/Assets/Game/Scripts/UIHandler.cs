@@ -7,42 +7,44 @@ public class UIHandler : MonoBehaviour
 {
 
     public GameObject menuPause;
+    public GameObject menuDebut;
     public GameManager UIJeu;
     public static bool enPause = false;
+    public BeatScroller bs;
+    public GuitareRecord guitarInput;
     
-    void Start()
-    {
-        
-    }
-
-
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
-            ActionPause();
+            actionPause();
         }
     }
 
-    void Pause()
+    void pause()        //Mise en pause du jeu
     {
         menuPause.SetActive(true);
         Time.timeScale = 0f;
         enPause = true;
-        
-
     }
-    void Reprendre()
+    void reprendre()    //Reprise du jeu
     {
         menuPause.SetActive(false);
         Time.timeScale = 1f;
         enPause = false;
     }
 
-    public void ActionPause()
+    public void actionPause()
     {
-        if (enPause) Reprendre();
-        else Pause();
+        if (enPause) reprendre();
+        else pause();
+    }
+
+    public void actionLancer()
+    {
+        menuDebut.SetActive(false);
+
     }
 
 }

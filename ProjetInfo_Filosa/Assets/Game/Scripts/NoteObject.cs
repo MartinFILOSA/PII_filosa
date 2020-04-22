@@ -5,29 +5,26 @@ using UnityEngine;
 public class NoteObject : MonoBehaviour
 {
     public bool canBePressed;
+    public string noteToHit;
+    public GuitareRecord guitarInput;
 
     public KeyCode keyToPress;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (guitarInput.noteHit == noteToHit)
         {
-            if (canBePressed)
+            if (canBePressed)       //Vérifie que la note peut être activée, la fait disparaitre si le bouton est déclenché
             {
                 gameObject.SetActive(false);
 
-               // GameManager.instance.noteHit();
+                GameManager.instance.noteHit();
+                guitarInput.noteHit = "";
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) //Comportement à la collision entre les boutons et les notes.
     {
         if (other.tag == "Activator")
         {
@@ -40,7 +37,7 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = false;
 
-          //  GameManager.instance.noteMiss();
+            GameManager.instance.noteMiss();
         }
     }
 }

@@ -21,19 +21,13 @@ public class MetronomeBeatUI : MonoBehaviour
         audioSource = m.GetComponent<AudioSource>();
     }
 
-    void OnTick(int tickCount, int measure, int beat)
+    void OnTick(int tickCount, int measure, int beat)       //comportement de l'ui au clic du métronome + déclenchement de l'audio
     {
-        Debug.Log(beat);
+        
         animator = m.metronomeSprite[beat].GetComponent<Animator>();
         animator.SetTrigger("Tick");
         if (beat == 0) audioSource.PlayOneShot(audioUn);
         else audioSource.PlayOneShot(audioAutres);
-
-       
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

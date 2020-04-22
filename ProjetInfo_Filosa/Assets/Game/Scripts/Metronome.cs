@@ -13,39 +13,41 @@ public class Metronome : MonoBehaviour
     public Slider sdrBPM;
     
 
-
-
     // BPM voulu partagé par toute l'interface
     public static int BPM { get; set; }
     public BeatScroller tabExo;
+    public GameManager gm;
 
-    [SerializeField]
-    public float beatsPerMinute = BPM;
+    private float beatsPerMinute = BPM;
     private float beatsPerMeasure = 4;
 
-
     private bool actif = false;
-   
 
     public delegate void TickAction(int tickCount, int measure, int beat);
     public static event TickAction OnTick;
 
 
-    void Start()
+    void Awake()
     {
-        BPM = 120;
+        if (BPM == 0) BPM = 120;
         updateBPM(this);
-        StartCoroutine(Ticker());
         
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && actif == false)
+        {
+            lancerMetronome(this, tabExo);
+        }
+    }
 
     private IEnumerator Ticker()
     {
         actif = true;
         int tickCount = 0;
         
-        while (actif)
+        while (actif)       //Boucle infinie qui recommence à intervalle régulier. Chaque itération est un clic du métronome.
         {
 
             float intervalTime = 60f / beatsPerMinute;
@@ -82,9 +84,10 @@ public class Metronome : MonoBehaviour
         
     }
 
-    public static void lancerMetronome(Metronome m)
+    public static void lancerMetronome(Metronome m, BeatScroller tab)
     {
         m.StartCoroutine(m.Ticker());
+        tab.hasStarted = true;
     }
     
 }

@@ -7,26 +7,27 @@ public class ButtonController : MonoBehaviour
     private SpriteRenderer theSR;
     public Sprite defaultImage;
     public Sprite pressedImage;
-
+    public GuitareRecord guitarInput;
+    public string note;
 
     public KeyCode keyToPress;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         theSR = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (guitarInput.noteHit == note)
         {
             theSR.sprite = pressedImage;
         }
-        if (Input.GetKeyUp(keyToPress))
+        if (guitarInput.noteHit != note)
         {
             theSR.sprite = defaultImage;
         }
     }
+
+   
 }

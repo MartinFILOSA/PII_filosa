@@ -1,44 +1,64 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
 
-    public AudioSource theMusic;
     public bool startPlaying;
     public BeatScroller theBS;
+    public Metronome m;
+    public TextMeshProUGUI[] txtScore;
+
+    public GuitareRecord guitarInput;
+
+    public int scorePerNote = 100;
+    private int multiplier;
+    private int score;
+    private int nbrHit;
 
     public static GameManager instance;
 
-    // Start is called before the first frame update
     void Start()
     {
         instance = this;
+        score = 0;
+        multiplier = 1;
+        nbrHit = 0;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
 
         if (!startPlaying)
         {
-            if (Input.anyKeyDown)
+            if (theBS.hasStarted)
             {
                 startPlaying = true;
-                theBS.hasStarted = true;
-
-                theMusic.Play();
             }
         }
     }
 
-    public void noteHit()
+    public void noteHit()       //procédure qui incrémente le score si la note est jouée
     {
-        Debug.Log("Hit on Time");
+        nbrHit++;
+        if (nbrHit == 4 && multiplier < 4)
+        {
+            multiplier *= 2;
+            nbrHit = 0;
+        }
+        score += scorePerNote*multiplier;
+        foreach (TextMeshProUGUI txt in txtScore)
+        {
+            txt.text = "Score : " + score;
+        }
+
     }
-    public void noteMiss()
+    public void noteMiss()      //procédure remettant à zéro le multiplieur
     {
-        Debug.Log("Missed note");
+        Debug.Log("Note manquée");
+        multiplier = 1;
+        nbrHit = 0;
     }
 }

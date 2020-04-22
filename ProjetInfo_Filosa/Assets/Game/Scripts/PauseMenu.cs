@@ -13,28 +13,22 @@ public class PauseMenu : MonoBehaviour
     public Slider sdrBPM;
     public Metronome metronome;
 
-    public void changeBPMText()
+    public void changeBPMText()     //change le texte du BPM
     {
         Metronome.BPM = int.Parse(txtBpm.text);
     }
-    public void changeBPMSlider()
+    public void changeBPMSlider()   //change la valeur du BPM
     {
         Metronome.BPM = (int)(sdrBPM.value);
         Metronome.updateBPM(metronome);
     }
 
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         sdrBPM.value = Metronome.BPM;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void btnQuitter()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
